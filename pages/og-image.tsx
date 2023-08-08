@@ -12,12 +12,11 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   }
 }
 const Home: NextPage = ({title}:InferGetServerSidePropsType<typeof getServerSideProps>) => {
-
   return (
     <div className={styles.container}>
       <Head>
         <title>Hello There! {title} </title>
-        <meta property="og:image" content={`https://next-dynamic-og-image-rho.vercel.app/api/og?title=${title}`} />
+        <meta property="og:image" content={`https://73d18e239e12.ngrok.app/api/og?title=${title}`} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

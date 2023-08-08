@@ -16,22 +16,37 @@ const  OgImageHandler = async (req: NextRequest)=> {
     (
       <div
         style={{
-          fontSize: 128,
-          background: 'white',
+          background: '#0477fc',
           width: '100%',
           height: '100%',
           display: 'flex',
           textAlign: 'center',
-          alignItems: 'center',
+          // alignItems: 'center',
           justifyContent: 'center',
         }}
       >
-        Hello there ! {title}
+        <div style={{
+          color: 'white',
+          fontSize: '120px',
+          fontWeight: 'bolder',
+          paddingTop: '180px',
+          paddingBottom: '140px',
+        }}>
+          Join your team’s NIL Club
+        </div>
+        <div style={{
+          color: 'white',
+          fontSize: '60px',
+          fontWeight: 'bolder',
+          paddingBottom: '140px',
+        }}>
+          {title}
+          </div>
       </div>
     ),
     {
-      width: 1200,
-      height: 600,
+      width: 1100,
+      height: 2000,
     },
   );
 }
