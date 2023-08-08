@@ -12,7 +12,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   }
 }
 const Home: NextPage = ({title}:InferGetServerSidePropsType<typeof getServerSideProps>) => {
-
+  // this is a test
   return (
     <div className={styles.container}>
       <Head>
